@@ -96,6 +96,7 @@ button:nth-child(2) {
   font-size: 40px;
   color: white;
   font: bold;
+  text-shadow: 2px 2px 5px black;
 }
 @media screen and (max-width: 920px) {
   .navbar ul li {
