@@ -3,10 +3,12 @@
   margin: 0%;
   box-sizing: border-box;
 }
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .overlay {
   height: 100vh;
   width: 100%;
@@ -14,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .navbar {
   background-color: rgba(140, 235, 238, 0.3);
   padding: 20px;
@@ -26,24 +29,29 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo img {
   width: 80px;
   height: 80px;
   border-radius: 10px;
 }
+
 ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 10px 0;
 }
+
 ul li {
   margin: 5px 0;
   padding-left: 50px;
 }
+
 .navbar .bars {
   display: none;
 }
+
 .container {
   display: flex;
   /* background-color: darkgray; */
@@ -56,6 +64,7 @@ ul li {
   padding: 50px;
   margin-top: 100px;
 }
+
 .info {
   /* background-color: rgb(24, 245, 245); */
   padding: 40px;
@@ -66,11 +75,13 @@ ul li {
   /* text-align: right; */
   height: 300px;
 }
+
 .btn {
   display: flex;
   column-gap: 10px;
   width: 100%;
 }
+
 button {
   border: 10px;
   border-radius: 50px;
@@ -81,48 +92,130 @@ button {
   padding: 20px 30px;
   margin: 10px 0px;
 }
+
 button:nth-child(2) {
   background-color: transparent;
   color: white;
   border: 2px solid white;
 }
+
 .container h1 {
   font-size: 60px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
 }
+
 .container h2 {
   font-size: 40px;
   color: white;
   font: bold;
   text-shadow: 2px 2px 5px black;
 }
+
+.image-section {
+  width: 100%;
+  height: 70vh;
+  /* background-color: blue; */
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 25px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    /* border: 2px solid black; */
+    /* box-shadow: 10px 20px 30px rgb(177, 28, 28) ,-10px -20px 20px blue; */
+    box-shadow: 10px 20px 30px lightgray;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px rgb(179, 175, 175);
+}
+.con1 {
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.sub-container {
+  transition: 0.5s;
+  /* border: 10px dotted lightgray ; */
+}
+.sub-container img {
+  width: 325px;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.sub-container:hover { 
+  transform: scale(1.04);
+}
+.sub-container p {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    color: black;
+    text-shadow: 1px 1px 5px gray;
+}
+.video {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.video iframe {
+  width: 90%;
+  height: 300px;
+}
+
 @media screen and (max-width: 920px) {
   .navbar ul li {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 780px) {
   .navbar ul {
     display: none;
   }
+
   .navbar .bars {
     display: block;
   }
 }
+
 @media screen and (max-width: 570px) {
   .btn {
     flex-direction: column;
     margin-top: 50px;
   }
+
   .container {
     /* background-color: royalblue; */
     justify-content: center;
   }
 }
-@media screen and (max-width:450px) {
+
+@media screen and (max-width: 450px) {
   .container h2 {
-    font-size: 30px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .con1 {
+  /* width: 90%; */
   }
 }
